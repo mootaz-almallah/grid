@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 10px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .status {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    .status.available {
+      background: rgb(209, 222, 209);
+    }
+
+    .status.sold {
+        background: rgb(209, 222, 209);
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="./67971d0505fc91737956613.jpg" alt="...">
+      <span class="status available">Available</span>
+    </div>
+    <div class="gallery-item">
+        <img src="./67971d0505fc91737956613.jpg" alt="...">
+        <span class="status sold">Sold</span>
+    </div>
+    <div class="gallery-item">
+        <img src="./67971d0505fc91737956613.jpg" alt="...">
+        <span class="status sold">Sold</span>
+    </div>
+    <div class="gallery-item">
+        <img src="./67971d0505fc91737956613.jpg" alt="...">
+        <span class="status available">Available</span>
+    </div>
+  </div>
+</body>
+</html>
